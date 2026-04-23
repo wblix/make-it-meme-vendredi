@@ -1,0 +1,31 @@
+services:
+
+  # ─── WebSocket PHP (Ratchet) ───────────────────────────────────────────────
+  websocket:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    container_name: makemememe_ws
+    restart: unless-stopped
+    expose:
+      - "8080"
+    networks:
+      - app
+
+  # ─── Apache (sert le HTML + proxy WS) ─────────────────────────────────────
+  apache:
+    build:
+      context: .
+      dockerfile: docker/apache/Dockerfile
+    container_name: makemememe_apache
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    depends_on:
+      - websocket
+    networks:
+      - app
+
+networks:
+  app:
+    driver: bridge
