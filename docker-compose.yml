@@ -1,6 +1,6 @@
 services:
 
-  # ─── WebSocket PHP (Ratchet) ───────────────────────────────────────────────
+  # ─── WebSocket PHP  ───────────────────────────────────────────────
   websocket:
     build:
       context: .
@@ -12,7 +12,7 @@ services:
     networks:
       - app
 
-  # ─── Apache (sert le HTML + proxy WS) ─────────────────────────────────────
+  # ─── Apache  ─────────────────────────────────────
   apache:
     build:
       context: .
