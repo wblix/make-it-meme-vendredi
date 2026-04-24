@@ -19,10 +19,13 @@ class Chat implements MessageComponentInterface {
     protected $lobbyClients = [];
 
     private $memeImages = [
-        'https://i.imgflip.com/30b1gx.jpg',
-        'https://i.imgflip.com/1bij.jpg',
-        'https://i.imgflip.com/26am.jpg',
-        'https://i.imgflip.com/9ehk.jpg'
+        'https://media.tenor.com/JAJEdIBuT_gAAAAe/diegopatricio-patricio.png',
+        'https://i.pinimg.com/236x/05/ff/98/05ff98fafe207af21da553a7b21a5877.jpg',
+        'https://cdn.prod.website-files.com/64ef86fd99a286b447305635/67110f9d049f24a12b9a68ee_67110d53d5bf8427c861ffa2_blank%2520meme.webp',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCphRtRFcGDbQaLUBGJzu45apzpw8aoOOMww&s',
+        'https://www.shutterstock.com/image-photo/funny-man-winter-clothing-holding-600nw-2709640921.jpg',
+        'https://i.pinimg.com/736x/25/2a/04/252a045199e33164a8b7577fc001851a.jpg',
+        'https://content.imageresizer.com/images/memes/prisoners-blank-meme-p3jqp.jpg'
     ];
 
     public function __construct() {
