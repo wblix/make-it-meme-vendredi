@@ -50,13 +50,7 @@ docker --version
 curl -fsSL https://get.docker.com | sh
 sudo usermod -aG docker $USER
 ```
-
-**3. Copier le projet sur le serveur** (depuis ton PC)
-```bash
-scp -r ./makemememe user@IP_SERVEUR:/home/user/makemememe
-```
-
-**4. Lancer**
+**3. Lancer**
 ```bash
 cd makemememe
 docker compose up -d --build
